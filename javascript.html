@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>MINtech</title>
+    <style>
+
+header {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0078d4;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MINtech</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+  
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="java.html">Java</a>
+                <a class="dropdown-item" href="html.html">HTML</a>
+                <a class="dropdown-item" href="css.html">CSS</a>
+                <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="courses.html">Serching For Other Courses</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#LogInModal">LogIn</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#SignUp">SignUp</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- LogInModal -->
+<div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LogInModalLabel">LogIn to MINtech</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxxxxx@gmail.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">LogIn</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!--SignUp Modal -->
+  <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpLabel">Grab a New Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter valid email address">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Create Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create a strong Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Conform Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Get custamized notifications Via Email</label>
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h1>All About JavaScript</h1>
+</header>
+<div class="container">
+    <div class="section">
+        <h2>1. JavaScript (JS)</h2>
+        <p>JavaScript is a versatile, high-level programming language primarily used for adding interactivity and functionality to web pages.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Scripting Language</h2>
+        <p>JavaScript is often referred to as a scripting language because it's typically embedded within HTML documents and executed by web browsers.</p>
+    </div>
+
+    <!-- Placeholder for point 3 -->
+    <div class="section">
+        <h2>3. Client-Side Language</h2>
+        <p>Placeholder for information about JavaScript as a client-side language.</p>
+    </div>
+
+    <!-- Placeholder for point 4 -->
+    <div class="section">
+        <h2>4. Server-Side JavaScript</h2>
+        <p>Placeholder for information about server-side JavaScript using Node.js.</p>
+    </div>
+
+    <!-- Placeholder for point 5 -->
+    <div class="section">
+        <h2>5. Variables</h2>
+        <p>Placeholder for information about variables in JavaScript.</p>
+    </div>
+    <div class="section">
+        <h2>6. Data Types</h2>
+        <p>Placeholder for information about JavaScript data types.</p>
+    </div>
+
+    <!-- Placeholder for point 7 -->
+    <div class="section">
+        <h2>7. Operators</h2>
+        <p>Placeholder for information about JavaScript operators.</p>
+    </div>
+
+    <!-- Placeholder for point 8 -->
+    <div class="section">
+        <h2>8. Conditional Statements</h2>
+        <p>Placeholder for information about JavaScript conditional statements.</p>
+    </div>
+
+    <!-- Placeholder for point 9 -->
+    <div class="section">
+        <h2>9. Loops</h2>
+        <p>Placeholder for information about JavaScript loops.</p>
+    </div>
+
+    <!-- Placeholder for point 10 -->
+    <div class="section">
+        <h2>10. Functions</h2>
+        <p>Placeholder for information about JavaScript functions.</p>
+    </div>
+    <div class="section">
+        <h2>11. Event Handling</h2>
+        <p>Placeholder for information about JavaScript event handling, enabling responses to user interactions.</p>
+    </div>
+    
+    <!-- Placeholder for point 12 -->
+    <div class="section">
+        <h2>12. DOM Manipulation</h2>
+        <p>Placeholder for information about JavaScript DOM manipulation for dynamic web page updates.</p>
+    </div>
+    
+    <!-- Placeholder for point 13 -->
+    <div class="section">
+        <h2>13. Asynchronous Programming</h2>
+        <p>Placeholder for information about asynchronous programming in JavaScript using callbacks, promises, and async/await.</p>
+    </div>
+    
+    <!-- Placeholder for point 14 -->
+    <div class="section">
+        <h2>14. Closures</h2>
+        <p>Placeholder for information about closures in JavaScript, allowing access to outer function's scope.</p>
+    </div>
+    
+    <!-- Placeholder for point 15 -->
+    <div class="section">
+        <h2>15. Object-Oriented Programming (OOP)</h2>
+        <p>Placeholder for information about object-oriented programming principles in JavaScript.</p>
+    </div>
+    
+    <!-- Placeholder for point 16 -->
+    <div class="section">
+        <h2>16. Libraries and Frameworks</h2>
+        <p>Placeholder for information about JavaScript libraries and frameworks for easier development.</p>
+    </div>
+    
+    <!-- Placeholder for point 17 -->
+    <div class="section">
+        <h2>17. Module Systems</h2>
+        <p>Placeholder for information about JavaScript module systems and module imports/exports.</p>
+    </div>
+    
+    <!-- Placeholder for point 18 -->
+    <div class="section">
+        <h2>18. Error Handling</h2>
+        <p>Placeholder for information about error handling in JavaScript using try-catch blocks.</p>
+    </div>
+    
+    <!-- Placeholder for point 19 -->
+    <div class="section">
+        <h2>19. Local Storage and Cookies</h2>
+        <p>Placeholder for information about storing data locally and working with cookies in JavaScript.</p>
+    </div>
+    
+    <!-- Placeholder for point 20 -->
+    <div class="section">
+        <h2>20. Security</h2>
+        <p>Placeholder for information about security considerations in JavaScript, including XSS and CSRF.</p>
+    </div>
+    
+    <!-- Placeholder for point 21 -->
+    <div class="section">
+        <h2>21. Testing and Debugging</h2>
+        <p>Placeholder for information about testing and debugging tools and practices in JavaScript.</p>
+    </div>
+    
+    <!-- Placeholder for point 22 -->
+    <div class="section">
+        <h2>22. Performance Optimization</h2>
+        <p>Placeholder for information about optimizing JavaScript code for performance.</p>
+    </div>
+    
+    <!-- Placeholder for point 23 -->
+    <div class="section">
+        <h2>23. ES6 and Beyond</h2>
+        <p>Placeholder for information about ES6 features and the ongoing evolution of JavaScript.</p>
+    </div>
+    
+    <!-- Placeholder for point 24 -->
+    <div class="section">
+        <h2>24. Community and Resources</h2>
+        <p>Placeholder for information about the JavaScript developer community and learning resources.</p>
+    </div>
+    
+    <!-- Placeholder for point 25 -->
+    <div class="section">
+        <h2>25. Continuous Learning</h2>
+        <p>Placeholder for information about the importance of continuous learning in JavaScript development.</p>
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+<div class="container">
+    <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">learn more</a>
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

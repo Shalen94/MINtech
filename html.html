@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>MINtech</title>
+    <style>
+           header {
+            background-color: #0078d4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0078d4;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MINtech</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+  
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="java.html">Java</a>
+                <a class="dropdown-item" href="html.html">HTML</a>
+                <a class="dropdown-item" href="css.html">CSS</a>
+                <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="courses.html">Serching For Other Courses</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#LogInModal">LogIn</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#SignUp">SignUp</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- LogInModal -->
+<div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LogInModalLabel">LogIn to MINtech</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxxxxx@gmail.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">LogIn</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!--SignUp Modal -->
+  <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpLabel">Grab a New Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter valid email address">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Create Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create a strong Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Conform Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Get custamized notifications Via Email</label>
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <h1>Everything About HTML</h1>
+</header>
+<div class="container">
+    <div class="section">
+        <h2>1. Markup Language</h2>
+        <p>HTML is a markup language that uses tags to structure and format content on the web.</p>
+    </div>
+    <div class="section">
+        <h2>2. Elements and Tags</h2>
+        <p>HTML consists of elements represented by tags enclosed in angle brackets.</p>
+    </div>
+    <div class="section">
+        <h2>3. Document Structure</h2>
+        <p>An HTML document typically includes sections like DOCTYPE, html, head, title, meta, link, style, script, and body.</p>
+    </div>
+    <div class="section">
+        <h2>4. Text Markup</h2>
+        <p>HTML provides tags like p, h1 to h6, em, and strong for text formatting.</p>
+    </div>
+    <div class="section">
+        <h2>5. Lists</h2>
+        <p>HTML supports ordered (ol) and unordered (ul) lists with list items (li).</p>
+    </div>
+    <div class="section">
+        <h2>6. Links</h2>
+        <p>Hyperlinks are created with the anchor (a) tag.</p>
+    </div>
+    <div class="section">
+        <h2>7. Images</h2>
+        <p>Images are displayed using the img tag with a src attribute.</p>
+    </div>
+    <div class="section">
+        <h2>8. Forms</h2>
+        <p>HTML forms are used for user input and include elements like text fields, radio buttons, checkboxes, and buttons.</p>
+    </div>
+    <div class="section">
+        <h2>9. Tables</h2>
+        <p>HTML tables are used to organize data into rows and columns.</p>
+    </div>
+    <div class="section">
+        <h2>10. Semantic Elements</h2>
+        <p>HTML5 introduced semantic elements like header, footer, nav, article, section, and aside for improved document structure and accessibility.</p>
+    </div>
+    <div class="section">
+        <h2>11. Accessibility</h2>
+        <p>Ensuring accessibility through semantic HTML, alt text for images, and proper document structure is essential for inclusive web design.</p>
+    </div>
+    <div class="section">
+        <h2>12. CSS Integration</h2>
+        <p>HTML is often combined with CSS to control the presentation and layout of web pages, separating content from style.</p>
+    </div>
+    <div class="section">
+        <h2>13. Responsive Design</h2>
+        <p>HTML and CSS are used to create responsive web designs that adapt to different screen sizes and devices.</p>
+    </div>
+    <div class="section">
+        <h2>14. Browser Compatibility</h2>
+        <p>HTML should be written to be compatible with various web browsers, which may interpret HTML and CSS differently.</p>
+    </div>
+    <div class="section">
+        <h2>15. Continuous Learning</h2>
+        <p>HTML is continually evolving, so staying updated with the latest standards and best practices is essential for web developers.</p>
+    </div>
+    <!-- Additional points -->
+    <div class="section">
+        <h2>16. HTML5 Features</h2>
+        <p>HTML5 introduced new features like video and audio elements, canvas for graphics, local storage, and improved semantics.</p>
+    </div>
+    <div class="section">
+        <h2>17. Cascading Style Sheets (CSS)</h2>
+        <p>HTML works in conjunction with CSS to apply styles and layout to web pages.</p>
+    </div>
+    <div class="section">
+        <h2>18. Responsive Web Design</h2>
+        <p>Responsive design techniques make web pages adapt to various device sizes and orientations.</p>
+    </div>
+    <div class="section">
+        <h2>19. Accessibility Guidelines</h2>
+        <p>Web Content Accessibility Guidelines (WCAG) provide standards for making web content accessible to all users.</p>
+    </div>
+    <div class="section">
+        <h2>20. Frameworks and Libraries</h2>
+        <p>Frameworks like Bootstrap and libraries like jQuery simplify HTML and CSS development.</p>
+    </div>
+</div>
+
+
+
+
+
+      
+
+
+<div class="container">
+    <a href="https://www.w3schools.com/html/" target="_blank">learn more</a>
+</div>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
